@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ef73f60-fb8b-4ec5-a6ff-69d4e24aff75" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pset1.zip" afterPath="$PROJECT_DIR$/src/pset1.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pset1/HashCodeTester.java" afterPath="$PROJECT_DIR$/src/pset1/HashCodeTester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4ef73f60-fb8b-4ec5-a6ff-69d4e24aff75" name="Default" comment="" />
     <ignored path="ProblemSet1.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -636,12 +632,12 @@
       <updated>1423692305728</updated>
       <workItem from="1423692307875" duration="12057000" />
       <workItem from="1424045645744" duration="1912000" />
-      <workItem from="1424057420190" duration="411000" />
+      <workItem from="1424057420190" duration="443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14380000" />
+    <option name="totallyTimeSpent" value="14412000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1130" extended-state="6" />
