@@ -13,7 +13,7 @@ public class HashCodeTester {
         Object x = new Object();
         Object y = new Object();
         assertFalse(x.equals(y) && y.equals(x));
-        assertFalse(x.hashCode() == y.hashCode());
+        assertTrue(x.hashCode() != y.hashCode());
     }
 
     //Object vs C Class
@@ -21,7 +21,7 @@ public class HashCodeTester {
         Object x = new Object();
         C y = new C(3);
         assertFalse(x.equals(y) && y.equals(x));
-        assertFalse(x.hashCode() == y.hashCode());
+        assertTrue(x.hashCode() != y.hashCode());
     }
 
     //Object vs D Class
@@ -29,7 +29,7 @@ public class HashCodeTester {
         Object x = new Object();
         D y = new D(3,4);
         assertFalse(x.equals(y) && y.equals(x));
-        assertFalse(x.hashCode() == y.hashCode());
+        assertTrue(x.hashCode() != y.hashCode());
     }
 
     //D Class vs C Class
@@ -37,7 +37,7 @@ public class HashCodeTester {
         D x = new D(3,4);
         C y = new C(3);
         assertFalse(x.equals(y) && y.equals(x));
-        assertFalse(x.hashCode() == y.hashCode());
+        assertTrue(x.hashCode() != y.hashCode());
     }
 
     //C Class vs C Class
@@ -45,7 +45,7 @@ public class HashCodeTester {
         C x = new C(4);
         C y = new C(3);
         assertFalse(x.equals(y) && y.equals(x));
-        assertFalse(x.hashCode() == y.hashCode());
+        assertTrue(x.hashCode() != y.hashCode());
     }
 
     //C Class vs C Class (same int)
@@ -53,7 +53,7 @@ public class HashCodeTester {
         C x = new C(4);
         C y = new C(4);
         assertFalse(x.equals(y) && y.equals(x));
-        assertFalse(x.hashCode() == y.hashCode());
+        assertTrue(x.hashCode() != y.hashCode());
     }
 
     //D Class vs D Class
@@ -61,7 +61,7 @@ public class HashCodeTester {
         D x = new D(4,3);
         D y = new D(3,5);
         assertFalse(x.equals(y) && y.equals(x));
-        assertFalse(x.hashCode() == y.hashCode());
+        assertTrue(x.hashCode() != y.hashCode());
     }
 
     //D Class vs D Class (same ints)
@@ -69,7 +69,7 @@ public class HashCodeTester {
         D x = new D(4,3);
         D y = new D(4,3);
         assertFalse(x.equals(y) && y.equals(x));
-        assertFalse(x.hashCode() == y.hashCode());
+        assertTrue(x.hashCode() != y.hashCode());
     }
 
     //Object = Object
@@ -77,7 +77,7 @@ public class HashCodeTester {
         Object x = new Object();
         Object y = x;
         assertTrue(x.equals(y) && y.equals(x));
-        assertTrue(x.hashCode() == y.hashCode());
+        assertFalse(x.hashCode() != y.hashCode());
     }
 
     //C Class = C Class
@@ -85,7 +85,7 @@ public class HashCodeTester {
         C x = new C(3);
         C y = x;
         assertTrue(x.equals(y) && y.equals(x));
-        assertTrue(x.hashCode() == y.hashCode());
+        assertFalse(x.hashCode() != y.hashCode());
     }
 
     //D Class = D Class
@@ -93,6 +93,6 @@ public class HashCodeTester {
         D x = new D(3,4);
         D y = x;
         assertTrue(x.equals(y) && y.equals(x));
-        assertTrue(x.hashCode() == y.hashCode());
+        assertFalse(x.hashCode() != y.hashCode());
     }
 }
